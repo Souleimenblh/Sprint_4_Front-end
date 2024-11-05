@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card shadow mb-4">                   
+      <div class="card-body"> 
+       <table class="table table-striped">
+          <tr> <th>Id</th><th>Matricule Avion</th> <th>kilometrage Avion</th>  <th>Date fabrication</th> </tr>
+                <tbody *ngFor="let avion of avions">
+                         <tr >
+                            <td>{{avion.idAvion}}</td>
+                            <td>{{avion.matriculeAvion}}</td>
+                            <td>{{avion.celometrageAvion}}</td>
+                            <td>{{avion.dateFabrication | date:'dd/MM/yyyy'}}</td>
+                          </tr>                                    
+                 </tbody>
+      </table>
+      </div>
+    </div>
+  </div> 
+  
